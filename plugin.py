@@ -84,7 +84,7 @@ class CodeGeneratorCommand(BaseCommand):
         # 并且generated_content中包含Python代码
         success, generated_code, _, _ = await llm_api.generate_with_model(
             prompt=f"请生成一段Python代码来完成以下任务：{prompt}\n\n请只返回代码，不要包含任何解释性文字或Markdown格式。",
-            model_config=llm_api.get_available_models().get("default_model"), # 假设有一个默认模型
+            model_config=llm_api.get_available_models().get("qwen2.5-coder-7b"), # 假设有一个默认模型
             request_type="plugin.generate_code"
         )
 
