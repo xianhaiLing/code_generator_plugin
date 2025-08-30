@@ -1,0 +1,10 @@
+{
+  "manifest_version": 1,
+  "name": "Code Generation Plugin",
+  "version": "1.0.0",
+  "description": "一个能让MaiBot机器人自己生成和执行Python代码的插件",
+  "author": {
+    "name": "Manus"
+  }
+}
+
